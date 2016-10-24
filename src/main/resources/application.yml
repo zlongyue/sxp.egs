@@ -1,0 +1,17 @@
+server:
+  port: 9201
+eureka:
+  instance: 
+      preferIpAddress: true
+  client: 
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.hostname:10.64.2.154}:${eureka.port:7001}/eureka/
+    healthcheck:
+      enabled: true               
+feign:
+  httpclient:
+    enabled: false
+  hystrix:
+    enabled: false

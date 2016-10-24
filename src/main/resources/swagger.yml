@@ -1,0 +1,17 @@
+sxp:
+  egs: 
+    swagger:
+      group: ${spring.application.name}
+      pathMapping: /
+      regexUrl: /(sms|agent|bill99|card|cert|core|credit|cups|encryptor|merchant|pay2|qs)/.*
+      basePackage: com.ccqtgb.sxp.egs.controller
+      title: egs 
+      description:  egs apt
+      termsOfServiceUrl: null
+      name: ${spring.application.name}
+      url: www.sanxiapay.com
+      email: sanxiapay@mail.com
+      author: sanxiapay
+      version: 1.0.0
+      license: null
+      licenseUrl: null
